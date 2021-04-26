@@ -10,7 +10,7 @@ import javax.jws.WebService;
  */
 /*
 这个接口中targetnamespace的配置原则为：
-参考服务端发布的wsdl文档中，wsdl=speaker.wsdl 中的namespace的值，这里配置为http://webservice.xj.bonc.com/  ，其实就是映射成服务端
+参考服务端发布的wsdl文档中，<wsdl:import 中的namespace的值，这里配置为http://webservice.xj.bonc.com/  ，其实就是映射成服务端
 这个接口speaker所在的包.类的绝对路径。
 <wsdl:import location="http://localhost:8002/ws-demo?wsdl=Speaker.wsdl" namespace="http://webservice.xj.bonc.com/"> </wsdl:import>
  */

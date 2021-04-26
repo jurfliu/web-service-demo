@@ -23,7 +23,7 @@ public class App2
         Speaker speaker = service.getPort(Speaker.class);
 
         //4.调用服务的方法
-        String str=speaker.sayHello("Beauxie");
+        String str=speaker.sayHello("Beauxie2");
 
         System.out.println(str);
 

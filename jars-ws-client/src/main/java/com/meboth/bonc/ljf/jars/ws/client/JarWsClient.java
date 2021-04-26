@@ -69,12 +69,15 @@ public class JarWsClient {
      * @throws Exception
      */
     public static void findAll() throws Exception {
-        Collection<? extends People> collection =
+        Collection<? extends People> list=
                 WebClient
                         .create("http://localhost:8001/rs/tjService/tjUser/")
                         .accept(MediaType.APPLICATION_JSON)
                         .getCollection(People.class);
-        System.out.println(collection);
+        for(People p:list){
+            System.out.println("p:"+p);
+        }
+
     }
 
 }

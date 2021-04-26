@@ -42,4 +42,13 @@ public class People {
     public void setBikeList(List<Bike> bikeList) {
         this.bikeList = bikeList;
     }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", bikeList=" + bikeList +
+                '}';
+    }
 }
